@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Hard-Core Limiter",
+  "version": "1.0.0",
+  "icons": {
+    "128": "icon-128.png"
+  },
+  "permissions": ["tabs", "activeTab", "storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon-34.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://trello.com/*"],
+      "js": ["contentScript.bundle.js"],
+      "css": ["content.styles.css"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.bundle.js"
+  },
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "options_page": "options.html",
+  "devtools_page": "devtools.html"
+}

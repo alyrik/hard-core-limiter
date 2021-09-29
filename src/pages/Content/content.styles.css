@@ -1,0 +1,42 @@
+.__hard-core-limiter__counter {
+  padding: 3px 6px;
+  border-radius: 4px;
+  margin: -4px 0 -4px 5px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 12px;
+  background: #26de09;
+  color: #333333;
+}
+
+.__hard-core-limiter__counter--danger {
+  background: #d71515;
+}
+
+.__hard-core-limiter__list--disabled {
+  pointer-events: none;
+}
+
+.__hard-core-limiter__list--disabled > * {
+  pointer-events: auto;
+}
+
+.__hard-core-limiter__list--disabled .card-composer-container {
+  cursor: not-allowed;
+}
+
+.__hard-core-limiter__list--disabled .card-composer-container.hide {
+  display: flex;
+}
+
+.__hard-core-limiter__list--disabled .card-composer-container .hide {
+  display: block;
+}
+
+.__hard-core-limiter__list--disabled .card-composer-container > * {
+  pointer-events: none;
+}
+
+.__hard-core-limiter__list--disabled .card-composer {
+  display: none;
+}
